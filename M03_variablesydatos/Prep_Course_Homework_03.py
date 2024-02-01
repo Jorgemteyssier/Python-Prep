@@ -6,14 +6,14 @@
 # 1) Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla
 
 # In[7]:
-
+x=5
 
 
 
 # 2) Imprimir el tipo de dato de la constante 8.5
 
 # In[3]:
-
+print(type(8.5))
 
 
 
@@ -21,7 +21,7 @@
 # 3) Imprimir el tipo de dato de la variable creada en el punto 1
 
 # In[8]:
-
+pirnt(type(x))
 
 
 
@@ -29,14 +29,14 @@
 # 4) Crear una variable que contenga tu nombre
 
 # In[2]:
-
+nombre='Jorge Miranda'
 
 
 
 # 5) Crear una variable que contenga un número complejo
 
 # In[3]:
-
+z=5+6j
 
 
 
@@ -44,7 +44,7 @@
 # 6) Mostrar el tipo de dato de la variable crada en el punto 5
 
 # In[4]:
-
+print(type(z))
 
 
 
@@ -60,15 +60,17 @@ pi = 3.1416
 # 8) Crear una variable que contenga el valor 'True' y otra que contenga el valor True. ¿Se trata de lo mismo?
 
 # In[3]:
-
-
+a=True
+b='True'
+#son diferentes uno es un valor bool y otro un str
 
 
 
 # 9) Imprimir el tipo de dato correspondientes a las variables creadas en el punto 8
 
 # In[5]:
-
+print(type(a))
+print(type(b))
 
 
 
@@ -76,7 +78,7 @@ pi = 3.1416
 # 10) Asignar a una variable, la suma de un número entero y otro decimal
 
 # In[1]:
-
+r=5+3.5
 
 
 
@@ -85,7 +87,7 @@ pi = 3.1416
 
 # In[2]:
 
-
+y+(5+3j)
 
 
 
@@ -93,7 +95,7 @@ pi = 3.1416
 
 # In[4]:
 
-
+5+y
 
 
 
@@ -101,7 +103,7 @@ pi = 3.1416
 
 # In[5]:
 
-
+pi*x
 
 
 
@@ -109,14 +111,15 @@ pi = 3.1416
 
 # In[6]:
 
-
+2**8
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
 
 # In[8]:
 
-
+k=27/4
+print(k)
 
 
 
@@ -124,7 +127,8 @@ pi = 3.1416
 
 # In[9]:
 
-
+print(int(k))
+27//4
 
 
 
@@ -132,7 +136,7 @@ pi = 3.1416
 
 # In[1]:
 
-
+27%4
 
 
 
@@ -140,7 +144,7 @@ pi = 3.1416
 
 # In[2]:
 
-
+6*4+3
 
 
 
@@ -148,7 +152,9 @@ pi = 3.1416
 
 # In[3]:
 
-
+d='hola '
+f='mundo'
+d+f
 
 
 
@@ -156,7 +162,7 @@ pi = 3.1416
 
 # In[4]:
 
-
+'2'==2 #uno es string y el otro es entero por eso es falso
 
 
 
@@ -164,7 +170,7 @@ pi = 3.1416
 
 # In[11]:
 
-
+int('2')==2
 
 
 
@@ -172,7 +178,7 @@ pi = 3.1416
 
 # In[12]:
 
-
+#por que lleva punto en vez de coma
 
 
 
@@ -180,7 +186,9 @@ pi = 3.1416
 
 # In[15]:
 
-
+p=3
+p-=1
+print(p)
 
 
 
@@ -188,7 +196,7 @@ pi = 3.1416
 
 # In[29]:
 
-
+1<<2 #con la operacion << recorres el numero de lugares que indica el valor de la derecha al valor de la izquierda hacia la izquierda completando el número con ceros esto dentro del sistema binario en sistema binario 1=1 al aplicar la operación se convierte en 100 que es igual a 4, esto por que etsamos trabajando en base binaria o base 2 en un cambio de bases de decimal a 2 dentro de la operación 
 
 
 
@@ -197,13 +205,13 @@ pi = 3.1416
 # In[23]:
 
 
-
+#no puedes sumar un str con un int por eso no sé permite, y las operaciones darían 4 si se transformaran los dos valores a int o 22 si se transforman los dos datos a str 
 
 
 
 # 26) Realizar una operación válida entre valores de tipo entero y string
 
 # In[30]:
-
+'hola '*3
 
 
