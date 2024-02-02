@@ -6,16 +6,27 @@
 # 1) A partir de una lista vacía, utilizar un ciclo while para cargar allí números negativos del -15 al -1
 
 # In[1]:
+lista_vacia=[]
+x=-1
+while x>-16:
+    lista_vacia.append(x)
+    x-=1
 
-
-
+lista_vacia.sort()
+print(lista_vacia)
 
 
 # 2) ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo los números pares?
 
 # In[3]:
 
-
+#Sí
+y=0
+while y < len(lista_vacia):
+    elemento=lista_vacia[y]
+    if elemento%2 == 0:
+        print(elemento)
+    y+=1
 
 
 
@@ -23,7 +34,9 @@
 
 # In[4]:
 
-
+for z in lista_vacia:
+    if z%2 ==0:
+        print(z)
 
 
 
@@ -31,28 +44,48 @@
 
 # In[7]:
 
+b=iter(lista_vacia)
+print(next(b))
+print(next(b))
+print(next(b))
 
-
-
+for t in lista_vacia[:3]:
+    print(t)
 # 5) Utilizar la función **enumerate** para obtener dentro del iterable, tambien el índice al que corresponde el elemento
 
 # In[9]:
 
-
+for w in enumerate(lista_vacia):
+    print(w)
 
 
 # 6) Dada la siguiente lista de números enteros entre 1 y 20, crear un ciclo donde se completen los valores faltantes: lista = [1,2,5,7,8,10,13,14,15,17,20]
 
 # In[10]:
 
-
+lista_1=[1,2,5,7,8,10,13,14,15,17,20]
+for p in range(1,21):
+    s=p in lista_1
+    if s == False:
+     lista_1.append(p)
+lista_1.sort()
+print(lista_1)
 
 
 
 # In[11]:
 
 
-n = 1
+#Este es el que estaba en el resuelto otra forma de hacerlo ver que aquí ingresa el numero faltante en el indice con insert, esto puede servir en listas en donde el orden sea distinto a el orden numerico o alfabetico
+lista = [1,2,5,7,8,10,13,14,15,17,20]
+n = 1  # Inicializa la variable n con el valor 1
+
+while n <= 20:  # Mientras n sea menor o igual a 20, se ejecuta el bucle
+    if not (n in lista):  # Verifica si n no está presente en la lista
+        lista.insert(n-1, n)  # Inserta el valor de n en la posición (n-1) de la lista
+    n += 1  # Incrementa el valor de n en 1 en cada iteración
+
+print(lista)  # Imprime la lista resultante
 
 
 
@@ -64,8 +97,25 @@ n = 1
 
 # In[23]:
 
+lista_fibo=[0,1]
+while len(lista_fibo)<30:
+    x=len(lista_fibo)
+    n1=lista_fibo[x-1]
+    n2=lista_fibo[x-2]
+    numero_fibo=n1+n2
+    lista_fibo.append(numero_fibo)
+print(lista_fibo)
+#codigo de la tarea ya resuelta 
+#muy similar las diferencias son que se usa una variuable dada en vez de la longitu de la lista con lo cual se tienbe que ir aumentando la variable y yo dentro del coclo while designe varias variables para hacerlo mas comprensivo a mi parecer ambas formas son buenas
+fibo = [0, 1]  # Crea una lista inicial con los primeros dos números de la secuencia de Fibonacci
 
+n = 2  # Inicializa la variable n con el valor 2
 
+while n < 30:  # Mientras n sea menor que 30, se ejecuta el bucle
+    fibo.append(fibo[n - 1] + fibo[n - 2])  # Agrega el siguiente número de Fibonacci a la lista
+    n += 1  # Incrementa el valor de n en 1 en cada iteración
+
+print(fibo)  # Imprime la lista de la secuencia de Fibonacci
 
 
 # 8) Realizar la suma de todos elementos de la lista del punto anterior
